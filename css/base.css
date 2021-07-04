@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+* {
+	--bg: #040406;
+	--color: #8DEBFF;
+	--purple: #6e64ff;
+	--font: rgb(244, 242, 255);
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--purple);
+	border-radius: 10px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: var(--bg);
+	color: white;
+	font-family: 'Roboto';
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* NAV START */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: top 0.3s;
+}
+
+.left-nav {
+    display: flex;
+    order: 0;
+}
+
+.right-nav {
+    display: flex;
+    order: 2;
+}
+
+.image-nav {
+    display: flex;
+    order: 1;
+    margin: 10px 50px;
+    align-items: center;
+}
+
+.image-nav img {
+    width: 36px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+	margin: 0;
+}
+
+nav li {
+    margin: 0 30px;
+    letter-spacing: 1px;
+}
+
+nav a:hover, nav a::selection {
+	color: var(--purple) !important;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.nav-link:active {
+	color: var(--purple)!important;
+}
+
+.dropdown li {
+	margin: 0;
+}
+
+.nav-dropdown {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+
+.menu {
+    display: flex;
+    order: 3;
+    display: none;
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 32px;
+}
+
+.mobile-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    text-align:center;
+    transform: translateY(-110%);
+    transition: 2s;
+}
+
+.mobile-activate {
+    transform: translateY(0);
+    overflow: hidden;
+}
+
+.mobile-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.mobile-ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.mobile-ul li {
+    list-style: none;
+    height: 100px;
+}
+
+.mobile-ul li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-ul a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-social {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.mobile-social li {
+    margin: 10px 15px 30px 15px;
+}
+
+
+/* END NAVBAR */
+
+/* STICKY CONTENT */
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+}
+
+/* END STICKY  */
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	position: relative;
+	bottom: 0;
+}
+
+footer p {
+	font-family: 'Roboto Mono';
+	margin: 30px;
+	word-spacing: 3px;
+}
+
+footer span {
+	font-weight: bold;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+	nav {
+        justify-content: space-between;
+    }
+
+    .navbox {
+        display: none;
+    }
+
+    .image-nav {
+        margin: 10px 10px;
+    }
+
+    .menu {
+        display: block;
+        margin: 10px 25px;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+	.img-hero {
+		width: 300px;
+	}
+
+	.main-hero h2 {
+		font-size: 36px;
+	}
+
+	#container-about {
+		justify-content: center;
+		flex-direction: row;
+		height: auto;
+	}
+
+	.about-title {
+		justify-content: center;
+		margin-top: 60px;
+		width: 100%;
+	}
+
+	.about-headings {
+		margin-top: 5px;
+		margin-bottom: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	.about-headings h2 {
+		margin: 0;
+		line-height: 44px;
+		font-size: 28px;
+	}
+
+	.about-content {
+		padding: 22px;
+		width: 100%;
+	}
+
+	.about-ps {
+		text-align: center;
+		margin: 10px 5px;
+	}
+
+	.about-ps p {
+		margin: 20px 0;
+		word-spacing: 0.1px;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+
+	.buttonWrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.card-team {
+		margin: 30px 0;
+	}
+}
