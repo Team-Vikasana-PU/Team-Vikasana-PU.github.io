@@ -13,42 +13,14 @@
 	display: flex;
 	width: 50%;
 	justify-content: center;
+	flex-shrink: 1;
 }
 
 .img-hero img {
-	//width: 100%;
-	max-width: 500px;
+	width: auto;
+	max-width: 350px;
 	height: auto;
 	margin: 0 10px;
-	//animation: LogoAnimate 1.5s infinite linear;
-	
-}
-
-
-.img-hero img:hover {
-	
-}
-
-@keyframes LogoAnimate {
-	0% {
-		transform: translateY(0);
-	}
-
-	25% {
-		transform: translateY(-50px);
-	}
-
-	50% {
-		transform: translateY(0);
-	}
-
-	75% {
-		transform: translateY(50px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
 }
 
 .hero-text {
@@ -77,28 +49,196 @@
 }
 /************/
 
+/* ACHIEVEMENTS TAB */
 
-/* Contact US */
-
-#contact-us {
-	width: 100vw;
-	//height: 100vh;
+#achievements {
 	display: flex;
-	//background-color: var(--bg);
+	align-items: center;
 	justify-content: center;
+	width: 100vw;
+
 }
 
-.contact-form {
-	width: 70%;
+.achievements-bar {
+	width: 80%;
 	padding: 50px;
 	border-radius: 15px;
 	background-color: #0a0a0a;
 	display: flex;
 	flex-direction: row;
 	font-family: 'Heebo';
+	margin-bottom: 100px;
+	flex-direction: column;
+}
+
+.achiv-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: var(--purple);
+}
+
+.achiv-content {
+	font-family: 'Roboto';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.achiv-title {
+	font-weight: bold;
+	color: var(--font);
+}
+
+.achiv-about {
+	text-align: center;
+	color: var(--font);
+}
+
+.team-title {
+	margin: 25px 0 10px 0;
+	font-family: 'Heebo';
 	color: var(--purple);
 	text-transform: uppercase;
-	//justify-content: space-between;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	margin-bottom: 50px;
+}
+ 
+.card {
+	width: 100%;
+	max-width: 300px;
+	min-width: 200px;
+	height: 250px;
+	background-color: #0e0e0e;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
+	border: 2px solid rgba(7, 7, 7, 0.12);
+	font-size: 16px;   
+	transition: all 0.3s ease;
+	position: relative;
+	top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.3s ease;
+	position: relative;
+	/*
+	box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+				5px 5px 15px rgba(0, 0, 0, 0.5);*/
+}
+
+.card a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card a:hover {
+	text-decoration: none;
+}
+ 
+.icon {
+	width: 100%;
+	height: 80px;
+	max-width:80px;
+	background: linear-gradient(90deg, var(--purple) 0%, #4f42ff 40%, rgba(0, 0, 0, 0.4) 60%);
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	transition: all 0.8s ease;
+	background-position: 0px;
+	background-size: 200px;
+	font-size: 28px;
+}
+
+.card .title {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	margin-top: 30px;
+	color: var(--font);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+ 
+.card .text {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+	font-weight: 200;
+	letter-spacing: 2px;
+	opacity: 0;
+	max-height:0;
+	transition: all 0.3s ease;
+}
+ 
+.card:hover {
+	height: 270px;
+	transform-style: preserve-3d;
+}
+ 
+.card:hover .info {
+	height: 90%;
+}
+ 
+.card:hover .text {
+	transition: all 0.3s ease;
+	opacity: 1;
+	max-height:40px;
+}
+ 
+.card:hover .icon {
+	background-position: -120px;
+	transition: all 0.3s ease;
+	transform: translateZ(30px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+ 
+.card:hover .icon i {
+	background: linear-gradient(90deg, var(--purple), #4f42ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+/* Contact US */
+
+#contact-us {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-form {
+	width: 80%;
+	padding: 50px;
+	border-radius: 15px;
+	background-color: #0a0a0a;
+	display: flex;
+	flex-direction: row;
+	font-family: 'Heebo';
+	text-transform: uppercase;
 	margin-bottom: 100px;
 }
 
@@ -107,6 +247,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	width: 50%;
+	color: var(--purple);
 }
 
 .left-contact-us:after {
@@ -193,50 +334,3 @@
 }
 
 /****************************/
-
-#achievements {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-
-}
-
-.achievements-bar {
-	width: 70%;
-	padding: 50px;
-	border-radius: 15px;
-	background-color: #0a0a0a;
-	display: flex;
-	flex-direction: row;
-	font-family: 'Heebo';
-	color: var(--purple);
-	margin-bottom: 100px;
-	flex-direction: column;
-}
-
-.achiv-heading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-
-.achiv-content {
-	color: var(--font);
-	font-family: 'Roboto';
-}
-
-.achiv {
-	background-color: transparent!important;
-	margin: 10px 0;
-}
-
-.achiv:hover {
-	color: var(--purple)!important;
-}
-
-#v-pills-tab {
-	border-right: 2px solid var(--purple);
-}
