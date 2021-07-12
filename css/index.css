@@ -34,16 +34,22 @@
 	text-transform: uppercase;
 	font-family: 'Heebo';
 	stroke-width: 3;
+	margin: 0;
+}
+
+.hero-team span {
+	font-family: 'Samarkan';
+	font-size: 50px;
 }
 
 .hero-type {
-	font-size: 32px;
+	font-size: 36px;
 	color: var(--purple);
 	font-family: 'Heebo';
 }
 
 .hero-tag {
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 4px;
 	color: var(--font);
 }
@@ -61,7 +67,7 @@
 
 .achievements-bar {
 	width: 80%;
-	padding: 50px;
+	padding: 40px;
 	border-radius: 15px;
 	background-color: #0a0a0a;
 	display: flex;
@@ -75,9 +81,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 	color: var(--purple);
+}
+
+.achiv-heading h2 {
+	margin: 0;
 }
 
 .achiv-content {
@@ -91,22 +101,32 @@
 .achiv-title {
 	font-weight: bold;
 	color: var(--font);
+	font-size: 20px;
 }
 
 .achiv-about {
 	text-align: center;
 	color: var(--font);
+	margin-bottom: 80px;
 }
 
 .team-title {
-	margin: 25px 0 10px 0;
 	font-family: 'Heebo';
 	color: var(--purple);
 	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.team-about {
+	font-weight: bold;
+	color: var(--font);
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .content {
 	width: 100%;
+	min-height: 300px;
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
@@ -128,7 +148,6 @@
 	border: 2px solid rgba(7, 7, 7, 0.12);
 	font-size: 16px;   
 	transition: all 0.3s ease;
-	position: relative;
 	top: 10px;
 	display: flex;
 	justify-content: center;
@@ -232,7 +251,7 @@
 
 .contact-form {
 	width: 80%;
-	padding: 50px;
+	padding: 40px;
 	border-radius: 15px;
 	background-color: #0a0a0a;
 	display: flex;

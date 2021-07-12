@@ -40,7 +40,7 @@ function init() {
     let sprite = new THREE.TextureLoader().load( 'assets/star.png' );
     let starMaterial = new THREE.PointsMaterial({
         color: 0xaaaaaa,
-        size: 0.82,
+        size: 0.81,
         map: sprite
     });
 

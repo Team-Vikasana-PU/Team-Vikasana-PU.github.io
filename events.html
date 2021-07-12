@@ -1,166 +1,283 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Vikasana Events</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
 
-  <script src="https://kit.fontawesome.com/2f0ea8e786.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
+		<link rel="stylesheet" href="css/normalize.css" />
+		
+		<link rel="stylesheet" href="css/events.css" />
+		<link rel="stylesheet" href="css/base.css" />
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+		<script
+			src="https://kit.fontawesome.com/2f0ea8e786.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="icon" href="assets/vikasana_logo.png" sizes="32x32" />
 
-  <nav id="navbar">
+		<title>Vikasana Events</title>
+	</head>
+	<body>
+		<!-- Contributed by Aman (https://github.com/euhidaman) & Tarun (https://github.com/Tarun-Reddy-007) -->
+		
+		<nav id="navbar">
+			<div class="left-nav navbox">
+				<ul class="nav-ul">
+					<li>
+						<a class="nav-link" href="/about.html">About</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/team.html">Team</a>
+					</li>
+				</ul>
+			</div>
+	
+			<div class="right-nav navbox">
+				<ul class="nav-ul">
+					<li>
+						<a class="nav-link" href="events.html">Events</a>      
+					</li>
+					<li>
+						<a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>      
+					</li>
+				</ul>
+			</div>
+	
+			<div class="image-nav">
+				<a href="/">
+					<img src="assets/vikasana_logo.png">
+				</a>
+			</div>
+	
+			<div class="menu">
+				<i id="menu-icon" class="fa fa-bars"></i>
+			</div>
+		</nav>
+	
+		<div id="mobile-nav" class="mobile-nav">
+			<div class="mobile-content">
+				<ul class='mobile-ul'>
+					<li>
+						<a class="nav-link" href="/about.html">About</a>
+					</li>
+					<li>
+						<a class="nav-link" href="/team.html">Team</a>
+					</li>
+					<li>
+						<a class="nav-link" href="events.html">Events</a>   
+					</li>
+					<li>
+						<a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-    <div class="left-nav navbox">
-        <ul class="nav-ul">
-            <li>
-                <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/team.html">Team</a>
-            </li>
-        </ul>
-    </div>
 
+		<div class="wrapper">
+			<h2><strong>Upcoming Events</strong></h2>
+			<div class="cards">
+				<figure class="card">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/1.jpg" />
 
-    <div class="right-nav navbox">
-        <ul class="nav-ul">
-            <li>
-                <a class="nav-link" href="events.html">Events</a>      
-            </li>
-            <li>
-                <a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>      
-            </li>
-        </ul>
-    </div>
+					<figcaption>Dota 2</figcaption>
+				</figure>
 
-    <div class="image-nav">
-        <a style="padding: 0;" href="/">
-            <img src="assets/vikasana_logo.png">
-        </a>
-    </div>
+				<figure class="card">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/2.jpg" />
 
-    <div class="menu">
-        <i id="menu-icon" class="fa fa-bars"></i>
-    </div>
+					<figcaption>Stick Fight</figcaption>
+				</figure>
 
-</nav>
+				<figure class="card">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/3.jpg" />
 
-<div id="mobile-nav" class="mobile-nav">
+					<figcaption>Minion Masters</figcaption>
+				</figure>
 
-    <div class="mobile-content">
-        <ul class='mobile-ul'>
-            <li>
-                <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/team.html">Team</a>
-            </li>
-            <li>
-                <a class="nav-link" href="events.html">Events</a>   
-            </li>
-            <li>
-                <a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>
-            </li>
-        </ul>
+				<figure class="card">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
 
-    </div>
+					<figcaption>KoseBoz!</figcaption>
+				</figure>
 
-</div>
-  
+				<figure class="card">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/3.jpg" />
 
-<div class="container">
-    <div class="nxt icon" 
-    <button type="button" <i class="fa fa-angle-double-right" style="font-size:36px"></i><a href=""></a></div>   
-  
-  <div class="timeline">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" id="current-eve" style="background-image:linear-gradient(to bottom,#D31027,#EA384D);"
-          data-year="8/5/21">
-          <!--<img class="responsive" src="./assets/blockchainposter.jpeg" alt="Paris">-->
-          <div class="swiper-slide-content"><span class="timeline-year">May 2021</span>
-            <h3 class="timeline-title" style="font-size: xx-large;">Blockchain For Beginners</h4>
-            <!-- timer here -->
-            <p class="timeline-text" style="font-size:150%;" id="demo" style="font-size:larger;"></p>
-            <p class="timeline-text" style="font-size: x-large;color: black;font-style: italic;">- Mr. Murthy D. H. R.</p>
-            <p class="timeline-text" id="Register" style=" font-size:150%;color:black"><a href="https://forms.gle/RNFQHNFGSyPtDjJs9"
-                target="_blank">Click Here to Register!</a></p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);"
-          data-year="1/5/21">
-          <div class="swiper-slide-content"><span class="timeline-year">April 2021</span>
-            <h3 class="timeline-title"style="font-size: xx-large;">Careers Beyond Coding</h3>
-            <p  class="timeline-text" style="font-size: x-large;color: black;font-style: italic;">- Nithisha Agarwal</p>
-            <p class="timeline-text"style="font-size:150%;">Careers beyond coding was a webinar hosted by Team Vikasana for our audience to explore the vast career opportunities in the IT sector.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);"
-          data-year="24/4/21">
-          <div class="swiper-slide-content"><span class="timeline-year">April 2021</span>
-            <h3 class="timeline-title" style="font-size: xx-large;">Ideation Through Meditation</h3>
-            <p  class="timeline-text" style="font-size: x-large;font-style: italic;color:black"> - Gorad Sagar Ramchandra</p>
-            <p class="timeline-text"style="font-size:150%;">Ideation through meditation was a live session hosted by Vikasana on Instagram. </p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);" data-year="2021">
-          <div class="swiper-slide-content"><span class="timeline-year">March 2021</span>
-            <h3 class="timeline-title"style="font-size: xx-large;">Arduino Workshop</h4>
-            <p class="timeline-text" style="font-size:150%;"></p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%)" data-year="2020">
-          <div class="swiper-slide-content"><span class="timeline-year">December 2020</span>
-            <h4 class="timeline-title">Lets Launch!</h4>
-            <p class="timeline-text"style="font-size:150%;"> A virtual Rocket simulation event, where participants had to build rocket and simulate it according to the constraints.</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</div>
+					<figcaption>Minion Masters</figcaption>
+				</figure>
+			</div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
-<script  src="./js/timeline.js"></script>
-<script>
-    // Set the date we're counting down to
-                                                                    var countDownDate = new Date("May 8, 2021 11:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "_________";
-      }
-    }, 1000);
-    </script>
-</body>
+			<h2><strong>Previous Events</strong></h2>
+
+			<div class="news">
+				<figure class="article">
+					<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+
+					<figcaption>
+						<h3>New Item</h3>
+
+						<p>
+							In today’s update, two heads are better than one, and three heads
+							are better than that, as the all-new Flockheart’s Gamble Arcana
+							item for Ogre Magi makes its grand debut.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="article">
+					<img
+						src="https://pa1.narvii.com/6036/5618f215c7a357f3a01c0cac67f35e2e36d81915_hq.gif"
+					/>
+
+					<figcaption>
+						<h3>Update</h3>
+
+						<p>
+							Just in time for Lunar New Year and the Rat’s time in the cyclical
+							place of honor, the Treasure of Unbound Majesty is now available.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="article">
+					<img src="https://wallpaperaccess.com/full/1313700.jpg" />
+
+					<figcaption>
+						<h3>Update</h3>
+
+						<p>
+							Just in time for Lunar New Year and the Rat’s time in the cyclical
+							place of honor, the Treasure of Unbound Majesty is now available.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="article">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-57aG8tXU2SV_Ljh2OVDqj-1Ncq_pn3kLmz-TrtPk2lnvgxaNaIlSKQJstyKfCZanMc&usqp=CAU"
+					/>
+
+					<figcaption>
+						<h3>Update</h3>
+
+						<p>
+							Just in time for Lunar New Year and the Rat’s time in the cyclical
+							place of honor, the Treasure of Unbound Majesty is now available.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="article">
+					<img
+						src="https://wi.wallpapertip.com/wsimgs/153-1538532_desktop-wallpaper-laptop-mac-macbook-air-au94-apple.jpg"
+					/>
+
+					<figcaption>
+						<h3>Update</h3>
+
+						<p>
+							Just in time for Lunar New Year and the Rat’s time in the cyclical
+							place of honor, the Treasure of Unbound Majesty is now available.
+						</p>
+					</figcaption>
+				</figure>
+
+				<figure class="article">
+					<img
+						src="https://i.pinimg.com/originals/34/44/06/344406c921fed3d1163e499b81012e34.gif?q=60"
+					/>
+
+					<figcaption>
+						<h3>Update</h3>
+
+						<p>
+							Just in time for Lunar New Year and the Rat’s time in the cyclical
+							place of honor, the Treasure of Unbound Majesty is now available.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-row">
+				<div class="footer-follow">
+					<h4 class="footer-title">Follow us:</h4>
+					<ul class="footer-ul">
+						<li class="footer-li">
+							<a href="https://www.instagram.com/team_vikasana/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a href="https://www.linkedin.com/company/vikasana-research" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a href="https://www.facebook.com/teamvikasana" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a href="https://t.me/teamvikasana" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+						<li class="footer-li">
+							<a href="https://www.youtube.com/channel/UCYBYpkwxIHtXXHXu2qdYAgw" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+					<h6 class="footer-sitemap">sitemap</h6>
+					<ul class="site-ul">
+						<li class="site-li">
+							<a href="/about.html">About</a>
+						</li>
+						<li class="site-li">
+							<a href="/team.html">Team</a>
+						</li>
+						<li class="site-li">
+							<a href="/events.html">Events</a>
+						</li>
+					</ul>
+				</div>
+	
+				<div class="footer-locate">
+					<h4 class="footer-title">Locate Us:</h4>
+					<iframe style="border: 2px solid var(--purple);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.850886286686!2d77.53406111397328!3d13.171800214019537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae21be4ad63a55%3A0x1008adb771c3d236!2sPresidency+University!5e0!3m2!1sen!2sin!4v1552550500664" width="330" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</div>
+			<div class="footer-hr"></div>
+			<p>©2021, Vikasana. All Rights Reserved.</p>
+			
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
