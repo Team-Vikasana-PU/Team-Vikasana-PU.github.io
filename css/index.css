@@ -62,7 +62,6 @@
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-
 }
 
 .achievements-bar {
@@ -71,7 +70,6 @@
 	border-radius: 15px;
 	background-color: #0a0a0a;
 	display: flex;
-	flex-direction: row;
 	font-family: 'Heebo';
 	margin-bottom: 100px;
 	flex-direction: column;

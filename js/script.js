@@ -21,8 +21,9 @@ function init() {
     camera.position.z = 1;
     camera.rotation.x = Math.PI/2;
 
-    renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.WebGLRenderer( { alpha: true } );
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor( 0x000000, 0 );
     document.body.appendChild(renderer.domElement);
 
     starGeo = new THREE.Geometry();

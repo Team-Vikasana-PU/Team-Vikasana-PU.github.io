@@ -15,6 +15,9 @@ h2 strong,
 .news .article {
   position: relative;
 }
+.event-head {
+  text-transform: uppercase;
+}
 .fix {
   position: fixed;
 }
@@ -194,7 +197,7 @@ h2:after {
   transition: 0.2s;
 }
 .news .article figcaption h3 {
-  color: #2996df;
+  color: var(--purple);
   font-size: 16px;
   margin-bottom: 0;
   font-weight: bold;
