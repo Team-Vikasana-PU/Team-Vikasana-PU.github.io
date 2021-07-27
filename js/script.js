@@ -27,7 +27,7 @@ function init() {
     document.body.appendChild(renderer.domElement);
 
     starGeo = new THREE.Geometry();
-    for(let i=0;i<3500;i++) {
+    for(let i=0;i<4500;i++) {
         star = new THREE.Vector3(
         Math.random() * 600 - 300,
         Math.random() * 600 - 300,

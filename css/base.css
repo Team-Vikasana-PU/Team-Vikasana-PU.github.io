@@ -6,7 +6,7 @@
 * {
 	--bg: #040406;
 	--color: #8DEBFF;
-	--purple: #6e64ff;
+	--purple: #ff9425;
 	--font: rgb(244, 242, 255);
 }
 
@@ -56,7 +56,7 @@ nav {
     align-items: center;
     top:0;
     position: fixed;
-    z-index: 5;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
     transition: top 0.3s;
 }
@@ -250,14 +250,14 @@ footer span {
 }
 
 .footer-follow i {
-	font-size: 22px;
+	font-size: 28px;
 	color: var(--font);
 	transition: linear 0.3s;
 }
 
 .footer-follow i:hover {
 	color: var(--purple);
-	transform: scale(2);
+	transform: scale(1.5);
 }
 
 .footer-sitemap {

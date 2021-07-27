@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
 
     <script src="https://kit.fontawesome.com/2f0ea8e786.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
 
     <title>Team Vikasana</title>
@@ -25,24 +26,24 @@
                     <a class="nav-link" href="/about.html">About</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="/team.html">Team</a>
-                </li>
+                    <a class="nav-link" href="/bod.html">BoD</a>      
+                </li>					
             </ul>
         </div>
 
         <div class="right-nav navbox">
             <ul class="nav-ul">
                 <li>
-                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link" href="/events.html">Events</a>      
                 </li>
                 <li>
-                    <a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>
-                </li>
+                    <a class="nav-link" href="/team.html">Team</a>
+                </li>					
             </ul>
         </div>
 
         <div class="image-nav">
-            <a href="#">
+            <a href="/">
                 <img src="assets/vikasana_logo.png">
             </a>
         </div>
@@ -59,22 +60,34 @@
                     <a class="nav-link" href="/about.html">About</a>
                 </li>
                 <li>
+                    <a class="nav-link" href="/bod.html">BoD</a>
+                </li>
+                <li>
                     <a class="nav-link" href="/team.html">Team</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="events.html">Events</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="mailto:vikasana.pr@gmail.com" target="_blank">Contact</a>
+                    <a class="nav-link" href="/events.html">Events</a>
                 </li>
             </ul>
         </div>
     </div>
     
+    <div id="highlight" class="high-active">
+        <div class="high-main">
+            <h3><a href="events.html">Upcoming</a></h3>
+            <hr class="high-hr">
+        </div>
+        <div class="high-arrow">
+            <i class="arrow fas fa-chevron-right arrow-active"></i>
+        </div>
+    </div>
+
+
     <div id="main-hero">
         
         <div class="img-hero">
-            <img data-tilt class="js-tilt-logo" src="assets/vikasana_logo.png" alt="vikasana-logo">
+            <!--<img data-tilt class="js-tilt-logo" src="assets/vikasana_logo.png" alt="vikasana-logo">-->
+            <img src="assets/logo.gif">
         </div>
 
         <div class="hero-text">
@@ -87,13 +100,39 @@
 
     <div id="achievements">
         <div class="achievements-bar">
-            <div class="achiv-heading">
-                <h2>Project ROBOCON</h2>
+            <h2 class="achiv-heading">Achievements</h2>
+
+            <div class="wrapper-team">
+                
+                <div class="buttonWrapper">
+					<button class="tab-button active tab-left" id="robocon" data-id="robocon">Robocon</button>
+					<button class="tab-button tab-right" id="ter" data-id="ter">Ter</button>
+                </div>
+                <div class="contentWrapper">
+                    <div class="content-team active" id="robocon">
+                        <div class="proj-heading">
+                            <h3>Project ROBOCON</h3>
+                        </div>
+                        
+                        <div class="achiv-content">
+                            <p class="achiv-title">Qualified ROBOCON 2021 Round 1 with a score of 100</p>
+                            <p class="achiv-about">ABU Robocon is an Asian-Oceanian college robot competition, founded in 2002 by Asia-Pacific Broadcasting Union. In the competition robots compete to complete a task within a set period of time. ABU Robocon 2021 will be held at Jimo, China and the game will be based on the traditional game of East Asian countries: pitch-pot, or throwing arrows to a pot. In this game, each team designs two robots. One robot can pick up arrows and throw them to the five pots located on the field, but is restricted to the outer area of the field. The other robot, in addition to throwing arrows from the outer area, can navigate through both the outer and inner area of the field, rotating pots, blocking throwing attempts of the opponent, or handing leftover arrows on the field to the first robot. For the selection of the best team from India, a National level  Robocon Event is organized by Doordarshan, India hosted by IIT-Delhi. Currently Team Vikasana has Qualified the first round in the national level of Robocon 2021 with 100/100 score amongst 60 other institutes in India, 3 other institutes in Karnataka and the only team from Bengaluru.</p>
+                        </div>
+                    </div>
+                    <div class="content-team" id="ter">
+                        <div class="proj-heading">
+                            <h3>Project Ter</h3>
+                        </div>
+                        
+                        <div class="achiv-content">
+                            <p class="achiv-about">Ter is presidency university’s first intra-university fully automated transportation project by team Vikasana named after the tulu-konkan word for temple chariots. It is a relevant project for university life with features like digital display, voice assistant and much more. Ter aims to make in campus movement hassle free, automated and time saving.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="achiv-content">
-                <p class="achiv-title">Qualified ROBOCON 2021 Round 1 with a score of 100</p>
-                <p class="achiv-about">ABU Robocon is an Asian-Oceanian college robot competition, founded in 2002 by Asia-Pacific Broadcasting Union. In the competition robots compete to complete a task within a set period of time. ABU Robocon 2021 will be held at Jimo, China and the game will be based on the traditional game of East Asian countries: pitch-pot, or throwing arrows to a pot. In this game, each team designs two robots. One robot can pick up arrows and throw them to the five pots located on the field, but is restricted to the outer area of the field. The other robot, in addition to throwing arrows from the outer area, can navigate through both the outer and inner area of the field, rotating pots, blocking throwing attempts of the opponent, or handing leftover arrows on the field to the first robot. For the selection of the best team from India, a National level  Robocon Event is organized by Doordarshan, India hosted by IIT-Delhi. Currently Team Vikasana has Qualified the first round in the national level of Robocon 2021 with 100/100 score amongst 60 other institutes in India, 3 other institutes in Karnataka and the only team from Bengaluru.</p>
+            <div class="team-details">
+            
                 <h3 class="team-title">Team Details</h3>
                 <p class="team-about">“Coming together is a beginning. Keeping together is progress. Working together is success.”</p>
                 
@@ -228,16 +267,19 @@
                         </a>
                     </li>
                 </ul>
-                <h6 class="footer-sitemap">sitemap</h6>
+                <h5 class="footer-sitemap">sitemap</h5>
                 <ul class="site-ul">
                     <li class="site-li">
                         <a href="/about.html">About</a>
                     </li>
                     <li class="site-li">
-                        <a href="/team.html">Team</a>
+                        <a href="/bod.html">BoD</a>
                     </li>
                     <li class="site-li">
                         <a href="/events.html">Events</a>
+                    </li>
+                    <li class="site-li">
+                        <a href="/team.html">Team</a>
                     </li>
                 </ul>
             </div>
@@ -273,16 +315,51 @@
         var typewriter = new Typewriter(app, {
             loop: true
         });
-        typewriter.typeString("LEARN")
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString('BUILD')
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString('WIN')
+        typewriter.typeString("LEARN. BUILD. WIN.")
         .pauseFor(1500)
         .deleteAll()
         .start()
+
+        $('.high-arrow').on('click', function() {
+            if($('#highlight').hasClass('high-active')) {
+                $('#highlight').removeClass('high-active')
+                $('.arrow').removeClass('arrow-active')
+            }
+            else {
+                $('#highlight').addClass('high-active')
+                $('.arrow').addClass('arrow-active')
+            }
+        })
+
+        const tabs = document.querySelector(".wrapper-team");
+        const tabButton = document.querySelectorAll(".tab-button");
+        const contents = document.querySelectorAll(".content-team");
+
+        function changeTab(id) {
+            if (id) {
+                tabButton.forEach(btn => {
+                btn.classList.remove("active");
+                });
+                //target.classList.add("active");
+
+                contents.forEach(content => {
+                content.classList.remove("active");
+                });
+                const elements = document.querySelectorAll(`#${id}`);
+                
+                elements.forEach(ele => {
+                    ele.classList.add("active");    
+                })
+                
+            }
+        }
+
+        tabs.onclick = e => {
+            const id = e.target.dataset.id;
+            changeTab(id)
+        }
+
+        ScrollReveal().reveal('.achievements-bar', { delay: 200 });
     </script>
 
 </body>

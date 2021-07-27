@@ -15,6 +15,10 @@ h2 strong,
 .news .article {
   position: relative;
 }
+
+.card {
+  background-color: var(--purple);
+}
 .event-head {
   text-transform: uppercase;
 }
@@ -59,10 +63,15 @@ body {
 }
 .wrapper {
   padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 h2 {
   padding: 5px;
-  padding-left: 150px;
   color: var(--purple);
   margin: 0;
 }
@@ -84,11 +93,19 @@ h2:after {
   height: 2px;
   left: 0;
   right: 0;
-  background: #373d47;
+  //background: #373d47;
+}
+
+.line-eve {
+  opacity: 1;
+  background-color: black;
+  width: 100%;
 }
 .cards,
 .news {
   flex-flow: row wrap;
+  width: 80%;
+  justify-content: space-around;
 }
 .cards .card,
 .news .card {
@@ -115,7 +132,7 @@ h2:after {
   left: 0;
   right: 0;
   padding: 20px;
-  padding-left: 50px;
+  //padding-left: 50px;
   padding-bottom: 10px;
   font-size: 20px;
   background: none;
@@ -188,8 +205,9 @@ h2:after {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 60px 50px 80px 50px;
-  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   background: rgba(6, 18, 53, 0.6);
   opacity: 0;
@@ -198,7 +216,7 @@ h2:after {
 }
 .news .article figcaption h3 {
   color: var(--purple);
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0;
   font-weight: bold;
   padding-left: 10px;
