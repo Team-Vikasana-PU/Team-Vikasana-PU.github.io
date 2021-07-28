@@ -1,7 +1,12 @@
-@import url('http://fonts.cdnfonts.com/css/samarkan');
+/*@import url('http://fonts.cdnfonts.com/css/samarkan');*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+@font-face {
+	font-family: 'Samarkan';
+	src: url('samarkan.woff') format('woff');
+}
 
 * {
 	--bg: #040406;
