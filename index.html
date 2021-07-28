@@ -18,6 +18,23 @@
 </head>
 <body>
     <!-- Contributed by Umraz (https://github.com/Assassinumz) -->
+    <div id="loader">
+        <div class="load-top">
+            <div class="load-img">
+                <img src="assets/vikasana_logo.png">
+            </div>
+        </div>
+        <div class="load-title">
+            <div class="title-main">
+                <h2>Vikasana</h2>
+            </div>
+        </div>
+        <div class="load-bottom">
+            <h2 class="load-writing"><div id="write"></div></h2>
+        </div>
+        <div class="load-line"></div>
+        
+    </div>
 
     <nav id="navbar">
         <div class="left-nav navbox">
@@ -44,7 +61,7 @@
 
         <div class="image-nav">
             <a href="/">
-                <img src="assets/vikasana_logo.png">
+                <img src="assets/vikasana_logo.png" alt="Home" title="Home">
             </a>
         </div>
 
@@ -310,6 +327,15 @@
             perspective: 800
         })
 
+        var load = document.getElementById('write');
+        var typewriter_load = new Typewriter(load, {
+            loop: false,
+            delay: 60
+        });
+        typewriter_load.typeString("LEARN. <span class='load-middle'>BUILD.</span> WIN.").start()
+
+
+
         // Typewriter Heading
         var app = document.getElementById('desc');
         var typewriter = new Typewriter(app, {
@@ -319,6 +345,8 @@
         .pauseFor(1500)
         .deleteAll()
         .start()
+
+        
 
         $('.high-arrow').on('click', function() {
             if($('#highlight').hasClass('high-active')) {
@@ -361,6 +389,19 @@
 
         ScrollReveal().reveal('.achievements-bar', { delay: 200, scale: 1.5 })
         ScrollReveal().reveal('.contact-form', { delay: 200, scale: 1.5 })
+
+        $(window).on('load', function() {
+            setTimeout(function()
+            {   
+                $(".load-title").fadeOut()
+                $(".load-top").css({"top":"-50%"})
+                $(".load-bottom").css({"bottom":"-50%"})
+                $("#loader").fadeOut()    
+                $("body").css({"overflow":"visible", "overflow-x":"hidden"})
+            }, 3000);
+            
+        })
+
     </script>
 
 </body>

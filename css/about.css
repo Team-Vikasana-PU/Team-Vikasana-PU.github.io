@@ -37,7 +37,7 @@
 	color: var(--purple);
 	z-index: -1;
 	left: -5px;
-	top: 5px;
+	top: -5px;
 	transform: scale(1.6);
 	opacity: 0.14;
 	word-spacing: 5px;

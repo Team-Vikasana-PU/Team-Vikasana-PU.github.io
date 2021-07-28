@@ -1,3 +1,4 @@
+
 const menu = document.getElementById('menu-icon')
 menu.addEventListener("click", function() {
     var mobile = document.getElementById('mobile-nav')

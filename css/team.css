@@ -284,3 +284,84 @@ blockquote.EN:after{
 	color: var(--purple);
 	font-size: 18px;
 }
+
+/* TEAM COLORS */
+
+.ele-team h2,
+.ele-team blockquote.quote:before,
+.ele-team blockquote.quote:after,
+.ele-team .proj-li i {
+	color: #ff5959;
+}
+
+.ele-team .ds-top {
+	background-color: #ff5959;
+}
+
+.ele-team .card .name a:hover {
+	color: #ff5959;
+}
+
+.ele-team .role h6 {
+	color: #ff9a9a;
+}
+
+.cse-team h2,
+.cse-team blockquote.quote:before,
+.cse-team blockquote.quote:after,
+.cse-team .proj-li i {
+	color: #31ff53;
+}
+
+
+.cse-team .ds-top {
+	background-color: #31ff53;
+}
+
+.cse-team .card .name a:hover {
+	color: #31ff53;
+}
+
+.cse-team .role h6 {
+	color: #93ffae;
+}
+
+.mec-team h2,
+.mec-team blockquote.quote:before,
+.mec-team blockquote.quote:after,
+.mec-team .proj-li i {
+	color: #6b61ff;
+}
+
+.mec-team .ds-top {
+	background-color: #6b61ff;
+}
+
+.mec-team .card .name a:hover {
+	color: #6b61ff;
+}
+
+.mec-team .role h6 {
+	color: #9a8ffd;
+}
+
+.pr-team h2,
+.pr-team blockquote.quote:before,
+.pr-team blockquote.quote:after,
+.pr-team .proj-li i {
+	color: #fff93c;
+}
+
+.pr-team .ds-top {
+	background-color: #fff93c;
+}
+
+.pr-team .card .name a:hover {
+	color: #fff93c;
+}
+
+.pr-team .role h6 {
+	color: #fffb94;
+}
+
+

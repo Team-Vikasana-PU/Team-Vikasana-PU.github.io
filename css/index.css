@@ -1,5 +1,7 @@
-
-
+body {
+	overflow: hidden;
+	overflow-x: hidden;
+}
 #highlight {
 	position: fixed;
 	display: flex;
@@ -91,8 +93,8 @@
 }
 
 .img-hero img {
-	width: 900px;
-	max-width: 900px;
+	width: 1000px;
+	max-width: 1000px;
 	height: auto;
 	margin: 0 10px;
 }
