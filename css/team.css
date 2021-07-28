@@ -53,8 +53,6 @@
 }
 .tab-button.active {
 	border: 2px solid var(--purple);
-	//border-bottom:none;
-
 }
 
 .active {
@@ -216,7 +214,6 @@ blockquote.quote {
     color: var(--font);
 	font-family: 'Courgette', cursive;
     margin: 5px 0 20px;
-	//font-style: italic;
 }
 blockquote.EN {
     background-repeat: no-repeat;
@@ -287,6 +284,10 @@ blockquote.EN:after{
 
 /* TEAM COLORS */
 
+.ele-team .tab-button .active {
+	border: 2px solid #ff5959;
+}
+
 .ele-team h2,
 .ele-team blockquote.quote:before,
 .ele-team blockquote.quote:after,
@@ -310,20 +311,20 @@ blockquote.EN:after{
 .cse-team blockquote.quote:before,
 .cse-team blockquote.quote:after,
 .cse-team .proj-li i {
-	color: #31ff53;
+	color: #31ff7f;
 }
 
 
 .cse-team .ds-top {
-	background-color: #31ff53;
+	background-color: #31ff7f;
 }
 
 .cse-team .card .name a:hover {
-	color: #31ff53;
+	color: #31ff7f;
 }
 
 .cse-team .role h6 {
-	color: #93ffae;
+	color: #8effb9;
 }
 
 .mec-team h2,

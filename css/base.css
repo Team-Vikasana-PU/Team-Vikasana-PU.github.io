@@ -210,6 +210,12 @@ nav {
 
 .image-nav img {
     width: 36px;
+	transition: all 0.5s linear;
+}
+
+.image-nav img:hover {
+	transform: scale(1.2);
+	filter: blur(1px);
 }
 
 nav ul {
