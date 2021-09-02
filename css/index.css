@@ -299,6 +299,7 @@ body {
 	color: var(--font);
 	font-size: 20px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .content {
@@ -530,3 +531,88 @@ body {
 }
 
 /****************************/
+
+@media only screen and (max-width: 1280px) {
+	#main-hero {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.img-hero {
+		width: 100%;
+	}
+
+	.img-hero img {
+		width: 300px;
+	}
+
+	.hero-text {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10px;
+	}
+
+	.hero-team {
+		font-size: 30px;
+	}
+
+	.hero-team span {
+		font-size: 40px;
+	}
+
+	.hero-type {
+		font-size: 28px;
+	}
+
+	.hero-tag {
+		font-size: 18px;
+		text-align: center;
+	}
+
+
+	.achievements-bar {
+		width: 95%;
+		padding: 40px 10px;
+	}
+
+	.buttonWrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.tab-button {
+		//border-radius: 25px;
+	}
+
+	.tab-left {
+		border-radius: 40px 40px 0 0;
+	}
+
+	.tab-right {
+		border-radius: 0 0 40px 40px;
+	}
+
+	
+	.contact-form {
+		width: 95%;
+	}
+
+	.contact-form {
+		flex-direction: column;
+	}
+
+	.form-socials {
+		margin: 20px 0;
+	}
+
+	.right-contact {
+		width: 100%;
+	}
+	.content {
+		flex-direction: column;
+	}
+}
