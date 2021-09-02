@@ -28,6 +28,7 @@
 	width: 100%;
 }
 
+/*
 .about-title::before {
 	content: "About Us";
 	font-family: 'Heebo';
@@ -43,7 +44,7 @@
 	word-spacing: 5px;
 	letter-spacing: 3px;
 }
-
+*/
 .about-content {
 	font-size:18px;
 	font-family: 'Roboto', sans-serif;
@@ -125,6 +126,7 @@
 .mission p{
 	font-family: 'Roboto', sans-serif;
 	color: var(--font);
+	margin: 0;
 }
 
 /*****************************/
@@ -351,4 +353,49 @@ blockquote.EN:after{
 	font-size: 16px !important;
 	margin: 10px;
 	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+	#container-about {
+		margin-top: 30px;
+		width: 100vw;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+	}
+
+	#vision {
+		margin-top: 40px;
+	}
+
+	.vision-bg {
+		padding: 40px 10px;
+		width: 95%;
+	}
+
+	.mission-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mission {
+		max-width: 500px;
+		width: auto;
+		height: 200px;
+	}
+
+
+	.found-container {
+		padding: 40px 10px;
+		width: 95%;
+	}
+
+	.container {
+		justify-content: space-around;
+	}
+
+	
 }

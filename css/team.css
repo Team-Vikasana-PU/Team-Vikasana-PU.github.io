@@ -4,7 +4,7 @@
 	justify-content: center;
 	width: 100vw;
 	flex-direction: column;
-	margin-top: 150px;
+	padding-top: 150px;
 }
 
 .teams-bg {
@@ -365,4 +365,15 @@ blockquote.EN:after{
 	color: #fffb94;
 }
 
+
+@media only screen and (max-width: 1280px) {
+	.buttonWrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.teams-bg {
+		width: 95%;
+		padding: 40px 10px;
+	}
+}
 
