@@ -117,7 +117,7 @@ a {
 
 .title-main {
 	background-color: #0a0a0a;
-	z-index: 50;
+	z-index: 1100;
 	padding: 0 5px;
 }
 
@@ -191,7 +191,7 @@ nav {
     align-items: center;
     top:0;
     position: fixed;
-    z-index: 1000;
+    z-index: 500;
     background-color: rgba(0, 0, 0, 0.8);
     transition: top 0.3s;
 }
@@ -278,7 +278,7 @@ nav a:hover, nav a::selection {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
     overflow: hidden;
-    z-index: 999;
+    z-index: 499;
     text-align:center;
     transform: translateY(-110%);
     transition: 2s;
