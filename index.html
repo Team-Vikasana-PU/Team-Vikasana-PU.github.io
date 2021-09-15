@@ -55,6 +55,9 @@
                 <li>
                     <a class="nav-link" href="/bod.html">Directors</a>      
                 </li>					
+                <li>
+                    <a class="nav-link" href="/#">Gallery</a>      
+                </li>					
             </ul>
         </div>
 
@@ -65,6 +68,9 @@
                 </li>
                 <li>
                     <a class="nav-link" href="/team.html">Team</a>
+                </li>					
+                <li>
+                    <a class="nav-link" href="/blog.html">Blog</a>
                 </li>					
             </ul>
         </div>
@@ -90,10 +96,16 @@
                     <a class="nav-link" href="/bod.html">Directors</a>
                 </li>
                 <li>
+                    <a class="nav-link" href="/#">Gallery</a>
+                </li>
+                <li>
                     <a class="nav-link" href="/team.html">Team</a>
                 </li>
                 <li>
                     <a class="nav-link" href="/events.html">Events</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/blog.html">Blog</a>
                 </li>
             </ul>
         </div>
@@ -423,11 +435,8 @@
             }, 3000);  
         })
 
-        // Create a media condition that targets viewports at least 768px wide
         const mediaQuery = window.matchMedia('(max-width: 1280px)')
-        // Check if the media query is true
         if (mediaQuery.matches) {
-        // Then trigger an alert
             if($('#highlight').hasClass('high-active')) {
                     $('#highlight').removeClass('high-active')
                     $('.arrow').removeClass('arrow-active')

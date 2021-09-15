@@ -304,7 +304,7 @@ nav a:hover, nav a::selection {
 
 .mobile-ul li {
     list-style: none;
-    height: 100px;
+    height: 70px;
 }
 
 .mobile-ul li:hover {
