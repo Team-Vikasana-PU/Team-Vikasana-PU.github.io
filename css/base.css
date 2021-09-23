@@ -401,6 +401,10 @@ footer span {
 	transform: scale(1.5);
 }
 
+.footer-map {
+	text-align: center;
+}
+
 .footer-sitemap {
 	font-family: 'Heebo';
 	color: var(--purple);
@@ -463,6 +467,10 @@ footer span {
 
 	footer {
 		flex-direction: column;
+	}
+
+	.footer-map {
+		text-align: left;
 	}
 
 	.footer-ul {
