@@ -190,49 +190,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
       <script src="js/three.min.js"></script>
       <script src="js/script.js"></script>
-      <script>
-          const tabs = document.querySelector(".wrapper-team");
-          const tabButton = document.querySelectorAll(".tab-button");
-          const contents = document.querySelectorAll(".content-team");
-  
-          
-          function changeTab(id) {
-              if (id) {
-                  tabButton.forEach(btn => {
-                  btn.classList.remove("active");
-                  });
-                  //target.classList.add("active");
-  
-                  contents.forEach(content => {
-                  content.classList.remove("active");
-                  });
-                  const elements = document.querySelectorAll(`#${id}`);
-                  
-                  elements.forEach(ele => {
-                      ele.classList.add("active");
-                  })
-                  
-              }
-          }
-  
-          tabs.onclick = e => {
-              const id = e.target.dataset.id;
-              changeTab(id)
-          }
-  
-          $(document).ready(function() {
-              var hash = location.hash.replace(/^#/, '');
-              const ids = ['electronics', 'coding', 'mechanical', 'pr']
-              if (hash) {
-                  if (ids.includes(hash)) {
-                      changeTab(hash)    
-                  }
-                  
-                  //$('.nav-tabs a[href="#' + hash + '"]').tab('show');
-              }
-          })
-  
-      </script>
   
 </body>
 </html>
