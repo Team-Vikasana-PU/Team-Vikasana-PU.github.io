@@ -1,3 +1,25 @@
+.apply-button {
+    width: 200px;
+    background: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid var(--purple);
+    text-transform: uppercase;
+    transition: background 0.5s;
+}
+
+.apply-button:hover {
+    background: var(--purple);
+}
+
+.apply-button a i {
+    margin-left: 2px;
+}
+
+.apply-button a:hover {
+    color: var(--font);
+}
+
 #join-header {
     display: flex;
     width: 100vw;
@@ -8,7 +30,7 @@
     width: 50%;
     height: 100vh;
     display: flex;
-    margin-left: 100px;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -394,8 +416,6 @@
       left: -8px;
     }
     
-    
-
     .timeline-article .content-right:before {
       display: none;
     }
