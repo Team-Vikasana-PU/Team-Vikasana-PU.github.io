@@ -388,7 +388,7 @@ footer {
 .footer-follow i {
 	font-size: 28px;
 	color: var(--font);
-	transition: linear 0.3s;
+	transition: linear 0.2s;
 }
 
 .footer-follow i:hover {
