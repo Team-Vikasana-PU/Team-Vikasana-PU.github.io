@@ -1,403 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/index.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9HDSH0GSQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-H9HDSH0GSQ');
-    </script>
-
-    <script src="https://kit.fontawesome.com/2f0ea8e786.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/14c80cd6d4.js" crossorigin="anonymous"></script>
     <title>Team Vikasana</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
+    <script src="scripts/tailwind.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .hero-section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            margin-left: 8%;
+            width: 100%;
+            height: 70%;
+            justify-content: flex-end;
+        }
+
+        .hero-text h1 {
+            text-transform: uppercase;
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+
+        .vikasana-title {
+            font-size: 140px;
+        }
+
+        .team-title {
+            font-size: 100px;
+        }
+
+        .hero-counter {
+            height: 30%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .estd {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: rotate(-90deg);
+            letter-spacing: 2px;
+        }
+
+        .main-title {
+            font-size: 100px;
+            font-weight: bolder;
+        }
+
+
+        @media only screen and (min-width: 1400px) {
+            .vikasana-title {
+                font-size: 200px;
+            }
+
+            .team-title {
+                font-size: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 966px) {
+            .hero {
+                height: 100vh;
+            }
+
+            .vikasana-title {
+                font-size: 60px;
+            }
+
+            .team-title {
+                font-size: 50px;
+            }
+
+            .estd {
+                top: 90%;
+                right: -30px;
+            }
+
+            .hero-text {
+                padding: 0 20px;
+                padding-bottom: 30%;
+                margin-left: 0;
+            }
+        }
+    </style>
+
 </head>
-<body>
-    <!-- Contributed by Umraz (https://github.com/Assassinumz) -->
-    <div id="loader">
-        <div class="load-top">
-            <div class="load-img">
-                <img src="assets/vikasana_logo.png">
-            </div>
-        </div>
-        <div class="load-title">
-            <div class="title-main">
-                <h2>Vikasana</h2>
-            </div>
-        </div>
-        <div class="load-bottom">
-            <h2 class="load-writing"><div id="write"></div></h2>
-        </div>
-        <div class="load-line"></div>
-        
-    </div>
 
-    <nav id="navbar">
-		<div class="left-nav navbox">
-			<ul class="nav-ul">
-				<li>
-					<a class="nav-link" href="/about.html">About</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/bod.html">Directors</a>      
-				</li>					
-				<li>
-					<a class="nav-link" href="/team.html">Team</a>    
-				</li>					
-			</ul>
-		</div>
+<body class="bg-zinc-900 text-white w-full">
 
-		<div class="right-nav navbox">
-			<ul class="nav-ul">
-				<li>
-					<a class="nav-link" href="/events.html">Events</a>      
-				</li>
-				<li>
-					<a class="nav-link" href="/contact.html">Contact Us</a>
-				</li>					
-				<li>
-					<a class="nav-link" href="/join.html">Join Us</a>
-				</li>					
-			</ul>
-		</div>
-
-		<div class="image-nav">
-			<a href="/">
-				<img src="assets/vikasana_logo.png" alt="Home" title="Home">
-			</a>
-		</div>
-
-		<div class="menu">
-			<i id="menu-icon" class="fa fa-bars"></i>
-		</div>
-	</nav>
-
-	<div id="mobile-nav" class="mobile-nav">
-		<div class="mobile-content">
-			<ul class='mobile-ul'>
-				<li>
-					<a class="nav-link" href="/about.html">About</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/bod.html">Directors</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/team.html">Team</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/contact.html">Contact Us</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/events.html">Events</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/join.html">Join Us</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-    
-    <div id="highlight" class="high-active">
-        <div class="high-main">
-            <h3><a href="events.html">Upcoming</a></h3>
-            <!--<hr class="high-hr">-->
-                
-            <div class="event-poster">
-                <a href="./join.html">
-                    <img src="assets/events/recruitment.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="high-arrow">
-            <i class="arrow fas fa-chevron-right arrow-active"></i>
-        </div>
-    </div>
-
-
-    <div id="main-hero">
-        
-        <div class="img-hero">
-            <!--<img data-tilt class="js-tilt-logo" src="assets/vikasana_logo.png" alt="vikasana-logo">-->
-            <img src="assets/logo.gif">
-        </div>
-
-        <div class="hero-text">
-            <h2 class="hero-team">Team <span>Vikasana</span></h2>
-            <h2 class="hero-type"><div id="desc"></div></h2>
-            <h2 class="hero-tag">Research and Innovation team of Presidency University, Bengaluru.</h2>
-        </div>
-        
-    </div>
-
-    <div id="achievements">
-        <div class="achievements-bar">
-            <h2 class="achiv-heading">Projects</h2>
-
-            <div class="wrapper-team">
-                
-                <div class="buttonWrapper">
-					<button class="tab-button active tab-left" id="robocon" data-id="robocon">Robocon</button>
-					<button class="tab-button tab-right" id="ter" data-id="ter">Ter</button>
-                </div>
-                <div class="contentWrapper">
-                    <div class="content-team active" id="robocon">
-                        <div class="proj-heading">
-                            <h3>Project ROBOCON</h3>
-                        </div>
-                        
-                        <div class="achiv-content">
-                            <p class="achiv-title">Qualified ROBOCON 2021 Round 1 with a score of 100</p>
-                            <p class="achiv-about">ABU Robocon is an Asian-Oceanian college robot competition, founded in 2002 by Asia-Pacific Broadcasting Union. In the competition robots compete to complete a task within a set period of time. ABU Robocon 2021 will be held at Jimo, China and the game will be based on the traditional game of East Asian countries: pitch-pot, or throwing arrows to a pot. In this game, each team designs two robots. One robot can pick up arrows and throw them to the five pots located on the field, but is restricted to the outer area of the field. The other robot, in addition to throwing arrows from the outer area, can navigate through both the outer and inner area of the field, rotating pots, blocking throwing attempts of the opponent, or handing leftover arrows on the field to the first robot. For the selection of the best team from India, a National level  Robocon Event is organized by Doordarshan, India hosted by IIT-Delhi. Currently Team Vikasana has Qualified the first round in the national level of Robocon 2021 with 100/100 score amongst 60 other institutes in India, 3 other institutes in Karnataka and the only team from Bengaluru.</p>
-                        </div>
-                    </div>
-                    <div class="content-team" id="ter">
-                        <div class="proj-heading">
-                            <h3>Project Ter</h3>
-                        </div>
-                        
-                        <div class="achiv-content">
-                            <p class="achiv-about">Ter is presidency university’s first intra-university fully automated transportation project by team Vikasana named after the tulu-konkan word for temple chariots. It is a relevant project for university life with features like digital display, voice assistant and much more. Ter aims to make in campus movement hassle free, automated and time saving.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="team-details">
-            
-                <h3 class="team-title">Team Details</h3>
-                <p class="team-about">“Coming together is a beginning. Keeping together is progress. Working together is success.”</p>
-                
-                <div class="content">
-            
-                    <div class="card js-tilt-card">
-                        
-                        <a href="/team.html#electronics">
-                            <div class="icon"><i class="fas fa-network-wired"></i></div>
-                            <p class="title">Electronics</p>
-                            <p class="text">Click for more info</p>
+    <nav id="nav" class="w-full bg-zinc-900/50 md:bg-transparent">
+        <div class="w-full md:px-8 md:py-8 py-3 px-2">
+            <div class="flex">
+                <div class="flex justify-between w-full">
+                    <div>
+                        <a href="#">
+                            <img class="w-8 ml-5" src="./assets/vikasana_logo.png" alt="vikasana_logo">
                         </a>
-                       
                     </div>
-                    <div class="card js-tilt-card">
-                       
-                        <a href="/team.html#coding">
-                            <div class="icon"><i class="fas fa-code"></i></div>
-                            <p class="title">Coding</p>
-                            <p class="text">Click for more info</p>
-                        </a>
-                        
-                     
-                    </div>
-                    <div class="card js-tilt-card">
-                        
-                        <a href="/team.html#mechanical">
-                            <div class="icon"><i class="fas fa-cogs"></i></div>
-                            <p class="title">Mechanical</p>
-                            <p class="text">Click for more info</p>
-                        </a>
-        
-                    </div>
-                    <div class="card js-tilt-card">
-                        
-                        <a href="/team.html#pr">
-                            <div class="icon"><i class="fas fa-photo-video"></i></div>
-                            <p class="title">Public Relations</p>
-                            <p class="text">Click for more info</p>
-                        </a>
-                       
+
+                    <div class="hidden md:flex items-center uppercase">
+                        <a href="/"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">Home</a>
+                        <a href="./about.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">About</a>
+                        <a href="./sponsors.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a>
+                        <a href="./events.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a>
+                        <a href="./bod.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a>
+                        <a href="./contact.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a>
                     </div>
                 </div>
 
+                <div class="md:hidden flex items-center mr-8">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fa-solid fa-bars text-2xl hover:text-primary"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden mobile-menu">
+            <ul class="py-2 uppercase">
+                <li class="active my-5"><a href="/"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">Home</a>
+                </li>
+                <li class="my-5"><a href="./about.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">About</a></li>
+                <li class="my-5"><a href="./sponsors.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a></li>
+                <li class="my-5"><a href="./events.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a></li>
+                <li class="my-5"><a href="./bod.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a></li>
+                <li class="my-5"><a href="./contact.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-section justify-center flex-col items-start">
+            <div class="hero-text sm:py-10">
+                <h1 class="font-feutro text-primary team-title">Team</h1>
+                <h1 class="font-feutro vikasana-title">Vikasana</h1>
+                <p class="w-full font-poppins font-bold md:w-2/3 md:pl-2">Student Research and Innovation team of Presidency
+                    University, Bengaluru.</p>
+                <p class="estd font-poppins font-bold">Estd. In <span class="text-primary">2019</span></p>
+            </div>
+            <div class="hero-counter">
+                <div class="arrows h-full flex md:pl-10">
+                    <i class="fas fa-angle-right mt-8 md:ml-5"></i>
+                    <i class="fas fa-angle-right mt-8 ml-5"></i>
+                    <i class="fas fa-angle-right mt-8 ml-5"></i>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="footer-row">
-            <div class="footer-follow">
-                    <h4 class="footer-title">Follow us:</h4>
-                    <ul class="footer-ul">
-                      <li class="footer-li">
-                          <a href="https://www.instagram.com/team_vikasana/" target="_blank">
-                              <i class="fab fa-instagram"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.linkedin.com/company/vikasana-research" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.facebook.com/teamvikasana" target="_blank">
-                              <i class="fab fa-facebook"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://t.me/teamvikasana" target="_blank">
-                              <i class="fab fa-telegram-plane"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.youtube.com/channel/UCYBYpkwxIHtXXHXu2qdYAgw" target="_blank">
-                              <i class="fab fa-youtube"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://discord.gg/bHeKXqeP5U" target="_blank">
-                              <i class="fab fa-discord"></i>
-                          </a>
-                      </li>
-                    </ul>
-                </div>
-            
-            <div class="footer-map">
-                <h4 class="footer-sitemap">sitemap</h4>
-                <ul class="site-ul">
-                    <li class="site-li">
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/bod.html">Directors</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/team.html">Team</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/events.html">Events</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/contact.html">Contact</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="https://teamvikasana.blogspot.com/">Blog</a>
-                    </li>
-                </ul>
-            </div>
-  
-            <div class="footer-locate">
-                <h4 class="footer-title">LOCATION:</h4>
-                <iframe style="border: 2px solid var(--purple);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.850886286686!2d77.53406111397328!3d13.171800214019537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae21be4ad63a55%3A0x1008adb771c3d236!2sPresidency+University!5e0!3m2!1sen!2sin!4v1552550500664" width="330" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-            </div>
-        </div>
-        <div class="footer-hr"></div>
-        <p>©2021, Vikasana. All Rights Reserved.</p>
-        <p><span style="color:rgb(51, 156, 255);">&lt;/&gt;</span> with <span style="color:rgb(255, 92, 92);">&lt;3</span> by <a class="umz" href="https://assassinumz.github.io" target="_blank">Umraz Khan</a></p>
-        
-    </footer>
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        // tilt effects
-        $('.js-tilt-card').tilt({
-            perspective: 2000
-        })
-        $('.js-tilt-logo').tilt({
-            perspective: 800
-        })
-
-        var load = document.getElementById('write');
-        var typewriter_load = new Typewriter(load, {
-            loop: false,
-            delay: 60
-        });
-        typewriter_load.typeString("LEARN. <span class='load-middle'>BUILD.</span> WIN.").start()
-
-
-
-        // Typewriter Heading
-        var app = document.getElementById('desc');
-        var typewriter = new Typewriter(app, {
-            loop: true
-        });
-        typewriter.typeString("LEARN. BUILD. WIN.")
-        .pauseFor(1500)
-        .deleteAll()
-        .start()
-
-        
-
-        $('.high-arrow').on('click', function() {
-            if($('#highlight').hasClass('high-active')) {
-                $('#highlight').removeClass('high-active')
-                $('.arrow').removeClass('arrow-active')
-            }
-            else {
-                $('#highlight').addClass('high-active')
-                $('.arrow').addClass('arrow-active')
-            }
-        })
-
-        const tabs = document.querySelector(".wrapper-team");
-        const tabButton = document.querySelectorAll(".tab-button");
-        const contents = document.querySelectorAll(".content-team");
-
-        function changeTab(id) {
-            if (id) {
-                tabButton.forEach(btn => {
-                btn.classList.remove("active");
-                });
-                //target.classList.add("active");
-
-                contents.forEach(content => {
-                content.classList.remove("active");
-                });
-                const elements = document.querySelectorAll(`#${id}`);
-                
-                elements.forEach(ele => {
-                    ele.classList.add("active");    
-                })
-                
-            }
-        }
-
-        tabs.onclick = e => {
-            const id = e.target.dataset.id;
-            changeTab(id)
-        }
-
-        ScrollReveal().reveal('.achievements-bar', {delay: 200, reset: true})
-        ScrollReveal().reveal('.contact-form', {delay: 200, reset: true})
-
-        $(window).on('load', function() {
-            setTimeout(function()
-            {   
-                $(".load-title").fadeOut()
-                $(".load-top").css({"top":"-50%"})
-                $(".load-bottom").css({"bottom":"-50%"})
-                $("#loader").fadeOut()    
-                $("body").css({"overflow":"visible", "overflow-x":"hidden"})
-            }, 3000);  
-        })
-
-        const mediaQuery = window.matchMedia('(max-width: 1280px)')
-        if (mediaQuery.matches) {
-            if($('#highlight').hasClass('high-active')) {
-                    $('#highlight').removeClass('high-active')
-                    $('.arrow').removeClass('arrow-active')
-                }
-        }
-
-    </script>
-
+    <script src="/scripts/script.js"></script>
 </body>
+
 </html>

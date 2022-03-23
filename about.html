@@ -1,454 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/about.css">
-           
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9HDSH0GSQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-H9HDSH0GSQ');
-    </script>
-
-    <script src="https://kit.fontawesome.com/2f0ea8e786.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/14c80cd6d4.js" crossorigin="anonymous"></script>
     <title>Vikasana - About</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
+    <script src="scripts/tailwind.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .main-content {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .main-content h1 {
+            font-size: 100px;
+            font-weight: bolder;
+        }
+
+        .founders-container,
+        .divisions-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .divisions-container img {
+            width: 300px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 450px;
+        }
+
+        .hero-counter {
+            height: 20%;
+            display: flex;
+            align-items: flex-end;
+        }
+    </style>
 </head>
-<body>
-    <!-- Contributed by Sanjay (https://github.com/samz5320) -->
 
-    <nav id="navbar">
-		<div class="left-nav navbox">
-			<ul class="nav-ul">
-				<li>
-					<a class="nav-link" href="/about.html">About</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/bod.html">Directors</a>      
-				</li>					
-				<li>
-					<a class="nav-link" href="/team.html">Team</a>    
-				</li>					
-			</ul>
-		</div>
+<body class="bg-zinc-900 text-white w-full">
+    <nav id="nav" class="w-full bg-zinc-900/50 md:bg-transparent">
+        <div class="w-full md:px-8 md:py-8 py-3 px-2">
+            <div class="flex">
+                <div class="flex justify-between w-full">
+                    <div>
+                        <a href="/">
+                            <img class="w-8 ml-5" src="assets/vikasana_logo.png" alt="vikasana_logo">
+                        </a>
+                    </div>
 
-		<div class="right-nav navbox">
-			<ul class="nav-ul">
-				<li>
-					<a class="nav-link" href="/events.html">Events</a>      
-				</li>
-				<li>
-					<a class="nav-link" href="/contact.html">Contact Us</a>
-				</li>					
-				<li>
-					<a class="nav-link" href="/join.html">Join Us</a>
-				</li>					
-			</ul>
-		</div>
+                    <div class="hidden md:flex items-center uppercase">
+                        <a href="/" class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Home</a>
+                        <a href="#"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">About</a>
+                        <a href="./sponsors.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a>
+                        <a href="./events.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a>
+                        <a href="./bod.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a>
+                        <a href="./contact.html"
+                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a>
+                    </div>
+                </div>
 
-		<div class="image-nav">
-			<a href="/">
-				<img src="assets/vikasana_logo.png" alt="Home" title="Home">
-			</a>
-		</div>
-
-		<div class="menu">
-			<i id="menu-icon" class="fa fa-bars"></i>
-		</div>
-	</nav>
-
-	<div id="mobile-nav" class="mobile-nav">
-		<div class="mobile-content">
-			<ul class='mobile-ul'>
-				<li>
-					<a class="nav-link" href="/about.html">About</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/bod.html">Directors</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/team.html">Team</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/contact.html">Contact Us</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/events.html">Events</a>
-				</li>
-				<li>
-					<a class="nav-link" href="/join.html">Join Us</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-    <div id="container-about">
-        <div class="about-title-container">
-            <h2 class="about-title">About Us</h2>
+                <div class="md:hidden flex items-center mr-8">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fa-solid fa-bars text-2xl hover:text-primary"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-            <p>Team Vikasana is the student research and innovation team of Presidency University, Bengaluru, working
-                under the guidance of professors at the Research and Innovation dept, Presidency University, Bengaluru. We are a
-                team of students that aim to conceptualize, build and deliver top-notch robots.</p>
-            <p>Vikasana builds Technologies and innovations to contribute to a better learning experience in the university and represent and participate in technical conventions, conferences and competitions hosted in the collegiate, state levels in India and abroad.</p>
-            <p>We are always in pursuit to expand our apprenticeship in research, innovation, robots, space and other areas of engineering and technology.</p>
+
+        <div class="hidden mobile-menu">
+            <ul class="py-2 uppercase">
+                <li class="active my-5"><a href="/"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Home</a></li>
+                <li class="my-5"><a href="#"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">About</a>
+                </li>
+                <li class="my-5"><a href="./sponsors.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a></li>
+                <li class="my-5"><a href="./events.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a></li>
+                <li class="my-5"><a href="./bod.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a></li>
+                <li class="my-5"><a href="./contact.html"
+                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="main-content px-5 md:px-12">
+            <h1 class="font-poppins main-title pt-12"><span class="text-primary">A</span>bout</h1>
+            <p class="font-poppins">Team Vikasana is the student research and innovation team of Presidency University,
+                Bengaluru, working under the guidance of professors at the Research and Innovation dept, Presidency
+                University, Bengaluru. We are a team of students that aim to conceptualize, build and deliver top-notch
+                robots.</p>
+
+            <p class="font-poppins">Vikasana builds Technologies and innovations to contribute to a better learning
+                experience in the university and represent and participate in technical conventions, conferences and
+                competitions hosted in the collegiate, state levels in India and abroad.</p>
+
+            <p class="font-poppins">We are always in pursuit to expand our apprenticeship in research, innovation,
+                robots, space and other areas of engineering and technology.</p>
+            <h2 class="mt-6 text-3xl font-semibold">VISION</h2>
+            <p>To appreciate, encourage and be patrons of research and innovation and excel whilst leaving our mark in
+                the field of science and technology in all our endeavours.</p>
+
+            <h1 class="font-poppins main-title pt-6"><span class="text-primary">D</span>ivisions</h1>
+            <div class="divisions-container">
+                <a href="#">
+                    <img src="./assets/divisions/Aerospace.png" alt="vik-aero">
+                </a>
+                <a href="#">
+                    <img src="./assets/divisions/CYBER SECURITY.png" alt="vik-cybersecurity">
+                </a>
+                <a href="#">
+                    <img src="./assets/divisions/EV.png" alt="vik-EV">
+                </a>
+                <a href="#">
+                    <img src="./assets/divisions/GAMING.png" alt="vik-gaming">
+                </a>
+                <a href="#">
+                    <img src="./assets/divisions/PR.png" alt="vik-PR">
+                </a>
+                <a href="#">
+                    <img src="./assets/divisions/ROBOTICS.png" alt="vik-robotics">
+                </a>
+            </div>
+
+            <h1 class="font-poppins main-title pt-6"><span class="text-primary">F</span>ounders</h1>
+            <div id="app" class="founders-container">
+
+                <div v-for="founder in founders" class="profile pt-2 md:mx-5">
+                    <div
+                        class="profile-card peer hover:border-2 border-primary z-10 w-full bg-zinc-900 px-3 py-5 rounded-xl flex flex-row items-center">
+                        <img class="w-24" :src="founder.img" alt="">
+                        <div class="profile-content ml-4">
+                            <h2 class="text-2xl font-poppins text-primary">{{founder.name}}</h2>
+                            <p class="text-slate-100 font-poppins text-sm">{{founder.position}}</p>
+                        </div>
+                    </div>
+                    <div
+                        class="profile-socials peer w-1/3 border-2 border-primary flex justify-center bg-slate-100 py-0.5 -translate-y-10 peer-hover:-translate-y-1 hover:-translate-y-1 ease-in duration-100 rounded-b-lg">
+                        <a :href="founder.linkedin"><i class="fa-brands fa-linkedin text-primary text-xl"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-counter">
+            <div class="arrows h-full flex pl-10">
+                <i class="fas fa-angle-right mt-1 ml-5"></i>
+                <i class="fas fa-angle-right mt-1 ml-5"></i>
+                <i class="fas fa-angle-right mt-1 ml-5"></i>
+            </div>
         </div>
     </div>
-
-    <div id="vision">
-        <div class="vision-bg">
-            <div class="vision-head">
-                <h2>Vision</h2>
-            </div>
-            <div class="vision-content">
-                <p>
-                    To appreciate, encourage and be patrons of research and innovation and excel whilst leaving our mark in the
-                    field of
-                    science and technology in all our endeavours.
-                </p>
-            </div>
-
-            <div class="mission-head">
-                <h3>
-                    Mission
-                </h3>
-            </div>
-            <div class="mission-container">
-                <div class="mission">
-                    <p>To represent and participate as the official ‘University Robotics Team’ in technical conventions, conferences
-                        and
-                        competitions hosted in the collegiate, state levels in India and abroad.</p>
-                    </div>
-                    <div class="mission">
-                        <p>To host international, national, intercollegiate and intra-collegiate conventions, conferences and competitions
-                            on behalf of the University in partnership with the technical industry.</p>
-                    </div>
-                    <div class="mission">
-                        <p> To conceptualise, build and deliver top notch robots, technologies and AI machines to contribute to a better
-                            learning experience in the university.</p>
-                    </div>
-                    <div class="mission">
-                        <p> To foster technical apprenticeship and an innovative spirit amongst our fellow students and the university.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="founders">
-        <div class="found-container">
-            <div class="found-title">
-                <h2>Founders</h2>
-            </div>
-            <div class="container">
-
-                <div class="card">
-                    <div class="card-info">
-                        <div class="ds-top"></div>
-
-                        <div class="avatar-holder">
-                        <img src="assets/team/faculty/Madhusudhan_sir.png">
-                        </div>
-
-                        <div class="name faculty-name">
-                        <a href="#">Dr. Madhusudhan M</a>
-                        </div>
-
-                        <div class="role faculty-role">
-                        <h6>Asst. Prof., Mechanical Department</h6>
-                        </div>
-                    </div>
-        
-                    <div class="card-quote">
-                        <div class="ds-info">
-                            <blockquote class="callout quote EN">
-                                You have to dream before your dreams can come true.
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-info">
-                        <div class="ds-top"></div>
-
-                        <div class="avatar-holder">
-                        <img src="assets/team/faculty/Sunil_sir.png">
-                        </div>
-
-                        <div class="name faculty-name">
-                        <a href="#">Mr. Sunilkumar Teggihalli M</a>
-                        </div>
-
-                        <div class="role faculty-role">
-                        <h6>Asst. Prof., Computer Science Department</h6>
-                        </div>
-                    </div>
-                    
-                    <div class="card-quote">
-                        <div class="ds-info">
-                            <blockquote class="callout quote EN">
-                                Knowledge will give you power, but character will give you respect.
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/bod/L Bharath.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/l-bharath-4a00561a7" target="_blank">L. Bharath</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>CEO</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Life is like riding a bicycle. To keep your balance, you must keep moving.
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-info">
-                        <div class="ds-top"></div>
-
-                        <div class="avatar-holder">
-                        <img src="assets/team/bod/Bharat Krishnan.png">
-                        </div>
-
-                        <div class="name">
-                        <a href="https://www.linkedin.com/in/bharat-krishnan-8375b0205" target="_blank">Bharat Krishnan</a>
-                        </div>
-
-                        <div class="role">
-                        <h6>CFO</h6>
-                        </div>
-                    </div>
-
-                    <div class="card-quote">
-                        <div class="ds-info">
-                            <blockquote class="callout quote EN">
-                                All that is gold, does not glitter.
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/bod/Kunal G Athikary.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/kunal-athikary-326628150" target="_blank">Kunal G Athikary</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>COO</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Failure is not a lost battle, but a start of a new one to improve yourself.
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/mechanical/Gugilla Mohanth Srinivas.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/mohanth-srinivas-a40415208" target="_blank">Gugilla Mohanth Srinivas</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>HoD Mechanical</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Everything that happens in your life has a cause. Life is all about finding that.
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/pr/Preetam R.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/preetam-r-a169a81b9" target="_blank">Preetam R</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>Director of Public Relations</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Man needs difficulties in life, because they are necessary to enjoy the success.
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/electrical/S Amith Kumar.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/s-amith-kumar-141a45123" target="_blank">S Amith Kumar</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>Senior Electronics Engineer</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Anything can be achieved through planning, management and execution, of which math is an integral part of each step.
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="ds-top"></div>
-
-                    <div class="avatar-holder">
-                      <img src="assets/team/coding/ASHMITHA - CSE.png">
-                    </div>
-
-                    <div class="name">
-                      <a href="https://www.linkedin.com/in/ashmita-jha-734b22207" target="_blank">Ashmita Jha</a>
-                    </div>
-
-                    <div class="role">
-                      <h6>Junior Developer</h6>
-                    </div>
-
-                    <div class="ds-info">
-                        <blockquote class="callout quote EN">
-                            Believe you can and you're halfway there.
-                        </blockquote>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> 
-        
-    <footer>
-        <div class="footer-row">
-            <div class="footer-follow">
-                    <h4 class="footer-title">Follow us:</h4>
-                    <ul class="footer-ul">
-                      <li class="footer-li">
-                          <a href="https://www.instagram.com/team_vikasana/" target="_blank">
-                              <i class="fab fa-instagram"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.linkedin.com/company/vikasana-research" target="_blank">
-                              <i class="fab fa-linkedin"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.facebook.com/teamvikasana" target="_blank">
-                              <i class="fab fa-facebook"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://t.me/teamvikasana" target="_blank">
-                              <i class="fab fa-telegram-plane"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://www.youtube.com/channel/UCYBYpkwxIHtXXHXu2qdYAgw" target="_blank">
-                              <i class="fab fa-youtube"></i>
-                          </a>
-                      </li>
-                      <li class="footer-li">
-                          <a href="https://discord.gg/bHeKXqeP5U" target="_blank">
-                              <i class="fab fa-discord"></i>
-                          </a>
-                      </li>
-                    </ul>
-                </div>
-            
-            <div class="footer-map">
-                <h4 class="footer-sitemap">sitemap</h4>
-                <ul class="site-ul">
-                    <li class="site-li">
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/bod.html">Directors</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/team.html">Team</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/events.html">Events</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="/contact.html">Contact</a>
-                    </li>
-                    <li class="site-li">
-                        <a href="https://teamvikasana.blogspot.com/">Blog</a>
-                    </li>
-                </ul>
-            </div>
-  
-            <div class="footer-locate">
-                <h4 class="footer-title">LOCATION:</h4>
-                <iframe style="border: 2px solid var(--purple);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.850886286686!2d77.53406111397328!3d13.171800214019537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae21be4ad63a55%3A0x1008adb771c3d236!2sPresidency+University!5e0!3m2!1sen!2sin!4v1552550500664" width="330" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-            </div>
-        </div>
-        <div class="footer-hr"></div>
-        <p>©2021, Vikasana. All Rights Reserved.</p>
-        <p><span style="color:rgb(51, 156, 255);">&lt;/&gt;</span> with <span style="color:rgb(255, 92, 92);">&lt;3</span> by <a class="umz" href="https://assassinumz.github.io" target="_blank">Umraz Khan</a></p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
 
     <script>
-        ScrollReveal().reveal('.vision-bg', {delay: 200, reset: true})
-        ScrollReveal().reveal('.found-container', {delay: 200, reset: true})
+        const app = Vue.createApp({
+            data: function () {
+                return {
+                    founders: []
+                }
+            },
+
+            beforeMount: function () {
+                this.getJson();
+            },
+
+            methods: {
+                getJson: function () {
+                    $.getJSON('./scripts/founders.json', function (data) {
+                        this.founders = data['founders']
+                    }.bind(this))
+                }
+            }
+        }).mount('#app')
     </script>
+    <script src="/scripts/script.js"></script>
 </body>
+
 </html>

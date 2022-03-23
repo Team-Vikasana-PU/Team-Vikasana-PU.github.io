@@ -1,0 +1,40 @@
+{
+    "faculty": [
+        {
+            "name": "Dr. C S Ramesh",
+            "position": "Dean, Research and Innovation",
+            "img": "./assets/team/faculty/Ramesh_sir.png",
+            "linkedin": "#"
+        },
+        {
+            "name": "Dr. Madhusudhan M",
+            "position": "Asst. Prof., Mechanical Department",
+            "img": "./assets/team/faculty/Madhusudhan_sir.png",
+            "linkedin": "#"
+        },
+        {
+            "name": "Mr. Sunilkumar Teggihalli M.",
+            "position": "Asst. Prof., Computer Science Department",
+            "img": "./assets/team/faculty/Sunil_sir.png",
+            "linkedin": "#"
+        },
+        {
+            "name": "Mr. S. Isaac Joel Raj",
+            "position": "Asst. Prof., Computer Science Department",
+            "img": "./assets/team/faculty/Issac_sir.png",
+            "linkedin": "#"
+        },
+        {
+            "name": "Ms. Priyanka S Umaraji",
+            "position": "Asst. Prof., Mechanical Department",
+            "img": "./assets/team/faculty/priyanka_mam.png",
+            "linkedin": "#"
+        },
+        {
+            "name": "Mr. Arvind Kumar",
+            "position": "Asst. Prof., Electronics Department",
+            "img": "./assets/team/faculty/arvind_sir.png",
+            "linkedin": "#"
+        }
+    ]
+}

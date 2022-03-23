@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@font-face {
+    font-family: 'Feturo';
+    src: url('./styles/FeturoRegular.woff2') format('woff2'),
+        url('./styles/FeturoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TeX';
+    src: url('TeXGyreAdventor-BoldItalic.woff2') format('woff2'),
+        url('TeXGyreAdventor-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+.nav-scrolled {
+    background-color: #18181b80 !important;
+    transition: background-color 200ms linear;
+}
+
+body {
+    background-image: url('../assets/TEXTURE.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 170%;
+    background-blend-mode: soft-light;
+    background-attachment: fixed;
+}
+
+#nav {
+    position: fixed;
+    align-items: center;
+    z-index: 100;
+}
+.hero {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+.arrows i {
+    font-size: 80px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 966px) {
+    .hero {
+        height: auto;
+    }
+    .main-content h1 {
+        font-size: 65px !important;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    
+}
