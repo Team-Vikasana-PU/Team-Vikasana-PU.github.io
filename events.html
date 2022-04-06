@@ -46,6 +46,11 @@
             align-items: center;
         }
 
+        .card-contain {
+            height: 500px;
+            width: 300px;
+        }
+
         .card {
             flex: 1;
             flex-basis: 300px;
@@ -57,7 +62,7 @@
             transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
             overflow: hidden;
             position: relative;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         .card img {
@@ -184,10 +189,9 @@
     <div class="hero">
         <div class="main-content px-5 md:px-12">
             <h1 class="font-poppins main-title pt-12"><span class="text-primary">U</span>pcoming Events</h1>
-            <div class="events-cards w-full pt-3">
-                
-                <a class="card group" href="./workshop.html">
-                    <div class="">
+            <div class="events-cards w-full pt-3"> 
+                <div class="card-contain group">
+                    <div class="card">
                         <img src="./assets/events/ctf.png">
                         <div class="descriptions">
                             <h1 class="text-3xl text-primary font-poppins mb-2 font-bold">Capture The Flag Workshop</h1>
@@ -195,12 +199,22 @@
                                 A workshop on Capture The Flag organized by Team 0xHEXA, Cybersecurity Division.
                             </p>
                             <div class="card-icons">
-                                <i class="fa-solid fa-arrow-up-right-from-square group-hover:text-primary"></i>
+                                <a href="./workshop.html">
+                                    <i class="fa-solid fa-arrow-up-right-from-square group-hover:text-primary"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </a>
+                    <div class="card-button mb-10">
+                        <a href="./workshop.html">
+                            <button class="bg-primary py-2 w-full font-poppins">Register now!
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </a>
+                    </div>
 
+                </div>  
+                
             </div>
         </div>
 
