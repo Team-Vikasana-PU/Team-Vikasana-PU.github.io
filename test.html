@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Noscript content for added SEO -->
+    <noscript><a href="https://www.eventbrite.com/e/vikasana-robo-reveal-2022-tickets-344170933527" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+    <!-- You can customize this button any way you like -->
+    <button id="eventbrite-widget-modal-trigger-344170933527" type="button">Buy Tickets</button>
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '344170933527',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-344170933527',
+            onOrderComplete: exampleCallback
+        });
+    </script>    
+</body>
+</html>
