@@ -1,234 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/14c80cd6d4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/14c80cd6d4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Team Vikasana</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="assets/vikasana_logo.png" sizes="32x32" />
     <script src="scripts/tailwind.js"></script>
     <style>
-        body {
-            overflow: hidden;
-        }
+      body {
+        overflow: hidden;
+      }
 
-        .hero-section {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      .hero-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            padding: 0;
-            margin-left: 8%;
-            width: 100%;
-            height: 70%;
-            justify-content: flex-end;
-        }
+      .hero-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-left: 8%;
+        width: 100%;
+        height: 70%;
+        justify-content: flex-end;
+      }
 
-        .hero-text h1 {
-            text-transform: uppercase;
-            line-height: 1;
-            letter-spacing: 2px;
-        }
+      .hero-text h1 {
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 2px;
+      }
 
+      .vikasana-title {
+        font-size: 140px;
+      }
+
+      .team-title {
+        font-size: 100px;
+      }
+
+      .hero-counter {
+        height: 30%;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .estd {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: rotate(-90deg);
+        letter-spacing: 2px;
+      }
+
+      .main-title {
+        font-size: 100px;
+        font-weight: bolder;
+      }
+
+      #popup {
+        position: fixed;
+        bottom: -380px;
+        right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+        transition: transform 1s;
+        z-index: 10;
+      }
+
+      .notch {
+        cursor: pointer;
+      }
+
+      .popup-active {
+        transform: translateY(-380px);
+      }
+
+      @media only screen and (min-width: 1400px) {
         .vikasana-title {
-            font-size: 140px;
+          font-size: 200px;
         }
 
         .team-title {
-            font-size: 100px;
+          font-size: 150px;
+        }
+      }
+
+      @media only screen and (max-width: 966px) {
+        .hero {
+          height: 100vh;
         }
 
-        .hero-counter {
-            height: 30%;
-            display: flex;
-            align-items: flex-end;
+        .vikasana-title {
+          font-size: 60px;
+        }
+
+        .team-title {
+          font-size: 50px;
         }
 
         .estd {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: rotate(-90deg);
-            letter-spacing: 2px;
+          top: 90%;
+          right: -30px;
         }
 
-        .main-title {
-            font-size: 100px;
-            font-weight: bolder;
+        .hero-text {
+          padding: 0 20px;
+          padding-bottom: 30%;
+          margin-left: 0;
         }
-
-        #popup {
-            position: fixed;
-            bottom: -380px;
-            right: 10%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 300px;
-            height: 400px;
-            transition: transform 1s;
-            z-index: 10;
-        }
-
-        .notch {
-            cursor: pointer;
-        }
-
-        .popup-active {
-            transform: translateY(-380px);
-        }
-
-
-        @media only screen and (min-width: 1400px) {
-            .vikasana-title {
-                font-size: 200px;
-            }
-
-            .team-title {
-                font-size: 150px;
-            }
-        }
-
-        @media only screen and (max-width: 966px) {
-            .hero {
-                height: 100vh;
-            }
-
-            .vikasana-title {
-                font-size: 60px;
-            }
-
-            .team-title {
-                font-size: 50px;
-            }
-
-            .estd {
-                top: 90%;
-                right: -30px;
-            }
-
-            .hero-text {
-                padding: 0 20px;
-                padding-bottom: 30%;
-                margin-left: 0;
-            }
-        }
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="bg-zinc-900 text-white w-full">
-
+  <body class="bg-zinc-900 text-white w-full">
     <nav id="nav" class="w-full bg-zinc-900/50 md:bg-transparent">
-        <div class="w-full md:px-8 md:py-8 py-3 px-2">
-            <div class="flex">
-                <div class="flex justify-between w-full">
-                    <div>
-                        <a href="#">
-                            <img class="w-8 ml-5" src="./assets/vikasana_logo.png" alt="vikasana_logo">
-                        </a>
-                    </div>
-
-                    <div class="hidden md:flex items-center uppercase">
-                        <a href="/"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">Home</a>
-                        <a href="./about.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">About</a>
-                        <a href="./sponsors.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a>
-                        <a href="./events.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a>
-                        <a href="./bod.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a>
-                        <a href="./members.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Members</a>
-                        <a href="./vayuvega/"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Vayuvega</a>
-                        <a href="./contact.html"
-                            class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a>
-                    </div>
-                </div>
-
-                <div class="md:hidden flex items-center mr-8">
-                    <button class="outline-none mobile-menu-button">
-                        <i class="fa-solid fa-bars text-2xl hover:text-primary"></i>
-                    </button>
-                </div>
+      <div class="w-full md:px-8 md:py-8 py-3 px-2">
+        <div class="flex">
+          <div class="flex justify-between w-full">
+            <div>
+              <a href="#">
+                <img
+                  class="w-8 ml-5"
+                  src="./assets/vikasana_logo.png"
+                  alt="vikasana_logo"
+                />
+              </a>
             </div>
-        </div>
 
-        <div class="hidden mobile-menu">
-            <ul class="py-2 uppercase">
-                <li class="active my-5"><a href="/"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2">Home</a>
-                </li>
-                <li class="my-5"><a href="./about.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">About</a></li>
-                <li class="my-5"><a href="./sponsors.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Sponsors</a></li>
-                <li class="my-5"><a href="./events.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Events</a></li>
-                <li class="my-5"><a href="./bod.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Directors</a></li>
-                <li class="my-5"><a href="./members.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Members</a></li>
-                <li class="my-5"><a href="./vayuvega/"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Vayuvega</a></li>
-                <li class="my-5"><a href="./contact.html"
-                        class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100">Contact</a></li>
-            </ul>
+            <div class="hidden md:flex items-center uppercase">
+              <a
+                href="/"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2"
+                >Home</a
+              >
+              <a
+                href="./workshop.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Workshop</a
+              >
+              <a
+                href="./about.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >About</a
+              >
+              <a
+                href="./sponsors.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Sponsors</a
+              >
+              <a
+                href="./events.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Events</a
+              >
+              <a
+                href="./bod.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Directors</a
+              >
+              <a
+                href="./members.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Members</a
+              >
+              <a
+                href="./vayuvega/"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Vayuvega</a
+              >
+              <a
+                href="./contact.html"
+                class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <div class="md:hidden flex items-center mr-8">
+            <button class="outline-none mobile-menu-button">
+              <i class="fa-solid fa-bars text-2xl hover:text-primary"></i>
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="hidden mobile-menu">
+        <ul class="py-2 uppercase">
+          <li class="active my-5">
+            <a
+              href="/"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100 underline decoration-primary underline-offset-8 decoration-2"
+              >Home</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./about.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >About</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./sponsors.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Sponsors</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./events.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Events</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./bod.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Directors</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./members.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Members</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./vayuvega/"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Vayuvega</a
+            >
+          </li>
+          <li class="my-5">
+            <a
+              href="./contact.html"
+              class="font-poppins mx-5 hover:text-gray-300 ease-in duration-100"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div id="popup" class="">
-        <div class="notch px-2">
-            <i class="fa-solid fa-up-down bg-primary px-4 py-1 rounded-tl-full rounded-tr-full"></i>
-        </div>
-        <div
-            class="highlight w-full h-full flex justify-center bg-zinc-900 border-solid border-2 border-primary items-center">
-            <h1>N/A</h1>
-            <!-- <a href="./events.html">
+      <div class="notch px-2">
+        <i
+          class="fa-solid fa-up-down bg-primary px-4 py-1 rounded-tl-full rounded-tr-full"
+        ></i>
+      </div>
+      <div
+        class="highlight w-full h-full flex justify-center bg-zinc-900 border-solid border-2 border-primary items-center"
+      >
+        <h1>N/A</h1>
+        <!-- <a href="./events.html">
                 <img class="" src="./assets/events/irc_recruitment_team.jpg" />
             </a> -->
-
-        </div>
+      </div>
     </div>
 
     <div class="hero">
-        <div class="hero-section justify-center flex-col items-start">
-            <div class="hero-text sm:py-10">
-                <h1 class="font-feutro text-primary team-title">Team</h1>
-                <h1 class="font-feutro vikasana-title">Vikasana</h1>
-                <p class="w-full font-poppins font-bold md:w-2/3 md:pl-2">Student Research and Development team of
-                    Presidency
-                    University, Bengaluru.</p>
-                <p class="estd font-poppins font-bold">Estd. In <span class="text-primary">2019</span></p>
-            </div>
-            <div class="hero-counter">
-                <div class="arrows h-full flex md:pl-10">
-                    <i class="fas fa-angle-right mt-8 md:ml-5"></i>
-                    <i class="fas fa-angle-right mt-8 ml-5"></i>
-                    <i class="fas fa-angle-right mt-8 ml-5"></i>
-                </div>
-            </div>
+      <div class="hero-section justify-center flex-col items-start">
+        <div class="hero-text sm:py-10">
+          <h1 class="font-feutro text-primary team-title">Team</h1>
+          <h1 class="font-feutro vikasana-title">Vikasana</h1>
+          <p class="w-full font-poppins font-bold md:w-2/3 md:pl-2">
+            Student Research and Development team of Presidency University,
+            Bengaluru.
+          </p>
+          <p class="estd font-poppins font-bold">
+            Estd. In <span class="text-primary">2019</span>
+          </p>
         </div>
+        <div class="hero-counter">
+          <div class="arrows h-full flex md:pl-10">
+            <i class="fas fa-angle-right mt-8 md:ml-5"></i>
+            <i class="fas fa-angle-right mt-8 ml-5"></i>
+            <i class="fas fa-angle-right mt-8 ml-5"></i>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="/scripts/script.js"></script>
-</body>
-
+  </body>
 </html>
