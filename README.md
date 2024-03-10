@@ -19,7 +19,7 @@ below to get started.
 3. **Navigate to the project directory:** Move into the project directory with:
 
    ```bash
-   cd viksana-website-redesign
+   cd Team-Vikasana-PU.github.io
    ```
 
 4. **Install dependencies:** Use npm to install the project dependencies:
