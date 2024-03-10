@@ -4,7 +4,7 @@ Welcome to the Viksana Website Redesign project! We appreciate your interest in
 contributing to the improvement of our website. Please follow the guidelines
 below to get started.
 
-## Contribution
+## Project Setup
 
 1. **Fork the repository:** Start by forking this repository to your GitHub
    account using the "Fork" button. Make sure you un-check `copy main branch only` as we have our project initialised in **website-redesign** branch 
