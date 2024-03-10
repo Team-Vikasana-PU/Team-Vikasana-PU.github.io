@@ -7,7 +7,7 @@ below to get started.
 ## Contribution
 
 1. **Fork the repository:** Start by forking this repository to your GitHub
-   account using the "Fork" button. Only for the **website-redesign** branch
+   account using the "Fork" button. Make sure you un-check `copy main branch only` as we have our project initialised in **website-redesign** branch 
 
 2. **Clone the repository:** Clone your forked repository to your local machine
    using the following command in your terminal:
